@@ -1,27 +1,48 @@
 import openai
 
 # Substitua 'YOUR_API_KEY' pelo seu chave de API da OpenAI
-openai.api_key = 'SUA_CHAVE'
+openai.api_key = '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'
 
-def filtrar_tema(texto):
-    # Defina o prompt para a solicitação ao GPT-3
-    prompt = f"Texto: {texto}\nFiltrar o tema:"
-
-    # Faça a solicitação para o GPT-3
-    resposta = openai.Completion.create(
-        engine="text-davinci-002",  # Use o mecanismo de texto GPT-3
+def treinar_modelo(dados_treinamento):
+    exemplos = []
+    for exemplo in dados_treinamento:
+        pergunta = exemplo['pergunta']
+        resposta_esperada = exemplo['resposta_esperada']
+        role = exemplo['role']
+        
+        exemplo_formatado = f"{role}: {pergunta}\n{resposta_esperada}\n"
+        exemplos.append(exemplo_formatado)
+    
+    prompt = "\n".join(exemplos)
+    
+    openai.Completion.create(
+        engine="text-davinci-002",
         prompt=prompt,
-        max_tokens=100,  # Defina o número máximo de tokens para a resposta
-        stop=["\n"]  # Pare a resposta na primeira linha (tema filtrado)
+        max_tokens=400,
+        stop=["\n"]
     )
 
-    # Extrai a resposta do GPT-3 e remove qualquer texto adicional
-    tema_filtrado = resposta['choices'][0]['text'].strip()
+    print("Modelo treinado!")
 
+def filtrar_tema(texto):
+    prompt = f"Texto: {texto}\nFiltrar o tema:"
+    resposta = openai.Completion.create(
+        engine="text-davinci-002",
+        prompt=prompt,
+        max_tokens=400,
+        stop=["\n"]
+    )
+
+    tema_filtrado = resposta['choices'][0]['text'].strip()
     return tema_filtrado
 
+from dados_treinamento import dados_treinamento as dados
+
+# Treinar o modelo com os dados de treinamento
+treinar_modelo(dados)
+
 # Exemplo de uso
-texto_exemplo = "Olá! Estou entrando em contato para relatar um problema com o meu pedido. Eu fiz o pedido há uma semana e ainda não recebi nenhuma atualização do status de entrega."
+texto_exemplo = "Olá! Estou tentando acessar o sistema de gerenciamento de fretes. Pode me ajudar?"
 
 tema_filtrado = filtrar_tema(texto_exemplo)
 print("Tema filtrado:", tema_filtrado)
