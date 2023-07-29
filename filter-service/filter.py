@@ -1,7 +1,10 @@
 import openai
+import os
+from dotenv import load_dotenv
 
-# Substitua 'YOUR_API_KEY' pelo seu chave de API da OpenAI
-openai.api_key = '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'
+load_dotenv()
+
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def treinar_modelo(dados_treinamento):
     exemplos = []

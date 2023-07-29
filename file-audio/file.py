@@ -1,5 +1,8 @@
 import openai
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def process(filepath):
     audio_path = os.path.join("./audio", filepath)
@@ -7,8 +10,7 @@ def process(filepath):
         raise FileNotFoundError(f"Arquivo de áudio não encontrado: {audio_path}")
     
     with open(audio_path, "rb") as audio:
-        my_key = "CHAVE"
-        openai.api_key = my_key
+        openai.api_key = os.getenv("OPENAI_API_KEY")
         transcript = openai.Audio.transcribe("whisper-1", audio)
     
     return transcript["text"]
