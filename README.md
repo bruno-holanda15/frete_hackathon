@@ -6,7 +6,7 @@ O funcionamento do projeto será estruturado em duas etapas fundamentais:
 
 1. **Transcrição do áudio:** O serviço será capaz de receber áudios no formato .ogg enviados pelo WhatsApp e, por meio da ferramenta de transcrição do openai, converterá o conteúdo desses áudios em texto, armazenando-o em um arquivo .txt.
 
-2. **Treinamento do modelo:** O serviço de filtragem do possui um modelo que faz a filtragem dos temas solicitados no áudio. Utilizamos um prompt com algumas perguntas mais corriqueiras que podem ser feitas durante o atendimento e induzimos o modelo a trazer a resposta que se encaixa melhor com o contexto.
+2. **Treinamento do modelo:** O serviço de filtragem possui um modelo que faz a filtragem do tema solicitado no áudio. Utilizamos um prompt com algumas perguntas mais corriqueiras que podem ser feitas durante o atendimento e induzimos o modelo a trazer a resposta que se encaixa melhor com o contexto.
 
 ## Dicas inicias
 
