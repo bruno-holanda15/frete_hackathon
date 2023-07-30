@@ -1,0 +1,4 @@
+filter-service/.venv
+filter-service/__pycache__
+audio-service/__pycache__
+.env

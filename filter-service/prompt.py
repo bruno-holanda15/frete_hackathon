@@ -8,6 +8,21 @@ Sua missão é retornar o motivo/categoria de um texto encaminhado para você.
         'role': 'Analista de atendimento'
     },
     {
+        'pergunta': 'Não sei usar código',
+        'resposta_esperada': 'Esqueci a senha do site Fretebras',
+        'role': 'Analista de atendimento'
+    },
+    {
+        'pergunta': 'Tô com erro na senha',
+        'resposta_esperada': 'Esqueci a senha do site Fretebras',
+        'role': 'Analista de atendimento'
+    },
+    {
+        'pergunta': 'O que aconteceu com minha senha?',
+        'resposta_esperada': 'Esqueci a senha do site Fretebras',
+        'role': 'Analista de atendimento'
+    },
+    {
         'pergunta': 'Quero ajuda para fazer o login.',
         'resposta_esperada': 'Acesso ao sistema',
         'role': 'Analista de atendimento'

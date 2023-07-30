@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 def process(filepath):
-    audio_path = os.path.join("./audio", filepath)
+    audio_path = os.path.join("audio-service/audio", filepath)
     if not os.path.exists(audio_path):
         raise FileNotFoundError(f"Arquivo de áudio não encontrado: {audio_path}")
     
@@ -15,10 +15,12 @@ def process(filepath):
     
     return transcript["text"]
 
-nome_do_arquivo = 'audio.ogg'
+nome_do_arquivo = 'audio-problemas-rastrear-frete.ogg'
 
 try:
     resultado = process(nome_do_arquivo)
     print(resultado)
+    with open("audio.txt", "w") as arquivo:
+        arquivo.write(resultado)
 except FileNotFoundError as e:
     print(e)
