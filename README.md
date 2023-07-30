@@ -11,7 +11,10 @@ O funcionamento do projeto será estruturado em duas etapas fundamentais:
 ## Dicas inicias
 
 - Instale o python na sua máquina
-- Rode o comando pip install openai
+- Rode os comandos:
+    - `pip install openai`
+    - `pip install python-dotenv`
+    - `pip install colorama`
 - Para testar o serviço, crie um .env e adicione a variável *OPENAI_API_KEY* com sua chave de acesso.
 
 
@@ -23,7 +26,7 @@ Para testar o serviço de transcrição de áudio, rode o comando:
 make transcript
 ```
 
-Para testar o serviço de filtragem, rode o comando:
+Para testar o serviço de filtragem em conjunto com a transcrição, rode o comando:
 
 ```
 make filter

@@ -1,7 +1,8 @@
 import openai
 import os
 from dotenv import load_dotenv
-
+from colorama import init, Fore, Style
+init()
 load_dotenv()
 
 def process(filepath):
@@ -15,11 +16,13 @@ def process(filepath):
     
     return transcript["text"]
 
-nome_do_arquivo = 'audio-problemas-rastrear-frete.ogg'
+nome_do_arquivo = 'audio-senha.ogg'
 
 try:
     resultado = process(nome_do_arquivo)
-    print(resultado)
+    print("--------------------------------------------------------------")
+    print(f"{Fore.GREEN}Frase captada:{Style.RESET_ALL} ", resultado)
+    print("--------------------------------------------------------------")
     with open("audio.txt", "w") as arquivo:
         arquivo.write(resultado)
 except FileNotFoundError as e:
