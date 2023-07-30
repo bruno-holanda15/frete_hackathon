@@ -404,5 +404,135 @@ dados_treinamento = [
         'pergunta': 'Onde encontro a minha NF.',
         'resposta_esperada': 'Solicitação de NF',
         'role': 'Analista de atendimento'
-    }
+    },
+        {
+        'pergunta': 'Quero mudar meu telefone',
+        'resposta_esperada': 'Atualização de telefone',
+        'role': 'Analista de atendimento'
+    },
+    {
+        'pergunta': 'Preciso atualizar meu telefone',
+        'resposta_esperada': 'Atualização de telefone',
+        'role': 'Analista de atendimento'
+    },
+    {
+        'pergunta': 'Onde altero meu número de telefone?',
+        'resposta_esperada': 'Atualização de telefone',
+        'role': 'Analista de atendimento'
+    },
+    {
+        'pergunta': 'Como faço para mudar meu telefone?',
+        'resposta_esperada': 'Atualização de telefone',
+        'role': 'Analista de atendimento'
+    },
+    {
+        'pergunta': 'Gostaria de fazer uma atualização no meu telefone',
+        'resposta_esperada': 'Atualização de telefone',
+        'role': 'Analista de atendimento'
+    },
+    {
+        'pergunta': 'Estou com problemas para mudar meu telefone no sistema de gerenciamento de fretes',
+        'resposta_esperada': 'Atualização de telefone',
+        'role': 'Analista de atendimento'
+    },
+    {
+        'pergunta': 'Como posso atualizar meu número de telefone no sistema da Fretebras?',
+        'resposta_esperada': 'Atualização de telefone',
+        'role': 'Analista de atendimento'
+    },
+    {
+        'pergunta': 'Gostaria de mudar meu telefone no sistema de gerenciamento de fretes. O que devo fazer?',
+        'resposta_esperada': 'Atualização de telefone',
+        'role': 'Analista de atendimento'
+    },
+    {
+        'pergunta': 'Quem pode me auxiliar na atualização do meu telefone?',
+        'resposta_esperada': 'Atualização de telefone',
+        'role': 'Analista de atendimento'
+    },
+    {
+        'pergunta': 'Como proceder para alterar meu número de telefone no sistema de gerenciamento de fretes?',
+        'resposta_esperada': 'Atualização de telefone',
+        'role': 'Analista de atendimento'
+    },
+        {
+        'pergunta': 'Como faço para alterar meu número de telefone no sistema de gerenciamento de fretes?',
+        'resposta_esperada': 'Atualização de telefone',
+        'role': 'Analista de atendimento'
+    },
+    {
+        'pergunta': 'Preciso de ajuda para atualizar meu telefone no sistema de gerenciamento de fretes.',
+        'resposta_esperada': 'Atualização de telefone',
+        'role': 'Analista de atendimento'
+    },
+    {
+        'pergunta': 'Estou com dificuldades para atualizar meu telefone no sistema da Fretebras. Como proceder?',
+        'resposta_esperada': 'Atualização de telefone',
+        'role': 'Analista de atendimento'
+    },
+    {
+        'pergunta': 'Quem pode me auxiliar com a alteração do meu número de telefone no sistema de gerenciamento de fretes?',
+        'resposta_esperada': 'Atualização de telefone',
+        'role': 'Analista de atendimento'
+    },
+    {
+        'pergunta': 'Quero mudar o telefone cadastrado no sistema da Fretebras. Como devo prosseguir?',
+        'resposta_esperada': 'Atualização de telefone',
+        'role': 'Analista de atendimento'
+    },
+    {
+        'pergunta': 'Como posso corrigir meu número de telefone no sistema de gerenciamento de fretes?',
+        'resposta_esperada': 'Atualização de telefone',
+        'role': 'Analista de atendimento'
+    },
+    {
+        'pergunta': 'Onde encontro a opção para alterar meu número de telefone no sistema de gerenciamento de fretes?',
+        'resposta_esperada': 'Atualização de telefone',
+        'role': 'Analista de atendimento'
+    },
+    {
+        'pergunta': 'Quem devo contatar para atualizar meu telefone no sistema da Fretebras?',
+        'resposta_esperada': 'Atualização de telefone',
+        'role': 'Analista de atendimento'
+    },
+    {
+        'pergunta': 'Não estou conseguindo atualizar meu telefone no sistema de gerenciamento de fretes. Pode me ajudar?',
+        'resposta_esperada': 'Atualização de telefone',
+        'role': 'Analista de atendimento'
+    },
+    {
+        'pergunta': 'O que devo fazer para mudar meu número de telefone no sistema da Fretebras?',
+        'resposta_esperada': 'Atualização de telefone',
+        'role': 'Analista de atendimento'
+    },
+        {
+        'pergunta': 'Estou tendo problemas para atualizar meu telefone no sistema de gerenciamento de fretes. O que devo fazer?',
+        'resposta_esperada': 'Atualização de telefone',
+        'role': 'Analista de atendimento'
+    },
+    {
+        'pergunta': 'Gostaria atualizar meu telefone no sistema de gerenciamento de fretes. Com quem posso falar?',
+        'resposta_esperada': 'Atualização de telefone',
+        'role': 'Analista de atendimento'
+    },
+    {
+        'pergunta': 'Gostaria mudar meu telefone no sistema de gerenciamento de fretes. Quem pode me ajudar?',
+        'resposta_esperada': 'Atualização de telefone',
+        'role': 'Analista de atendimento'
+    },
+    {
+        'pergunta': 'Estou tendo problemas para mudar meu telefone no sistema da Fretebras. O que devo fazer?',
+        'resposta_esperada': 'Atualização de telefone',
+        'role': 'Analista de atendimento'
+    },
+    {
+        'pergunta': 'Estou tendo problemas para mudar meu telefone no sistema da Fretebras. Com quem posso falar?',
+        'resposta_esperada': 'Atualização de telefone',
+        'role': 'Analista de atendimento'
+    },
+    {
+        'pergunta': 'Quero mudar meu telefone no sistema da Fretebras. Onde posso fazer isso no aplicativo?',
+        'resposta_esperada': 'Atualização de telefone',
+        'role': 'Analista de atendimento'
+    },
 ]
