@@ -535,4 +535,90 @@ dados_treinamento = [
         'resposta_esperada': 'Atualização de telefone',
         'role': 'Analista de atendimento'
     },
+       'pergunta': 'Estou tendo problemas para acessar o sistema de gerenciamento de fretes. O que devo fazer?',
+        'resposta_esperada': 'Acesso ao sistema',
+        'role': 'Analista de atendimento'
+    },
+    
+    {
+        'pergunta': 'Qual é o processo para buscar cargas no aplicativo',
+        'resposta_esperada': ' O processo geralmente envolve abrir o aplicativo, acessar a seção de busca de cargas e inserir os critérios desejados',
+        'role': 'Analista de atendimento'
+    },
+    {
+        'pergunta': 'Quais critérios posso usar para buscar cargas',
+        'resposta_esperada': 'Você pode buscar cargas por localização, tipo de carga, data de disponibilidade, etc.',
+        'role': 'Analista de atendimento'
+    },
+    {
+        'pergunta': 'É possível filtrar as cargas por tipo de veículo necessário para transportá-la?',
+        'resposta_esperada': 'Sim, você pode usar filtros para buscar cargas adequadas ao tipo de veículo que possui',
+        'role': 'Analista de atendimento'
+    },
+    {
+        'pergunta': 'Como posso entrar em contato com os anunciantes das cargas encontradas?',
+        'resposta_esperada': ' Normalmente, você pode encontrar informações de contato dos anunciantes nas informações da carga ou através de um sistema de mensagens integrado',
+        'role': 'Analista de atendimento'
+    }, 
+    
+    {  'pergunta': 'O aplicativo permite salvar cargas favoritas para acessá-las mais tarde?',
+       'resposta esperada': 'Sim, você pode salvar cargas favoritas para referência futura',
+       'role': 'Analista de atendimento'
+    }, 
+    { 'pergunta': 'Posso buscar cargas em regiões específicas?',
+       'resposta esperada': 'Sim, você pode buscar cargas em regiões específicas usando os filtros de localização',
+       'role': 'Analista de atendimento'
+    },
+    { 'pergunta': 'Existe a opção de receber notificações de novas cargas que correspondem aos meus critérios de busca?',
+      'resposta esperada': 'Sim, você pode configurar notificações para receber novas cargas relevantes',
+    },
+    { 'pergunta': 'O aplicativo fornece informações sobre a reputação dos anunciantes?',
+      'resposta esperada': 'Algumas plataformas podem fornecer informações sobre a reputação dos anunciantes com base em avaliações de outros usuários.',
+       'role': 'Analista de atendimento'
+    },
+    { 'pergunta': 'É possível simular o custo de transporte das cargas encontradas?',
+       'resposta esperada': 'Em alguns casos, é possível simular o custo estimado de transporte para determinadas cargas.',
+        'role': 'Analista de atendimento'
+    },   
+    { 'pergunta': 'Como faço para redefinir minha senha no aplicativo Fretebras?',
+       'resposta esperada': 'Para redefinir sua senha no aplicativo Fretebras, você pode seguir as etapas de recuperação de senha fornecidas na tela de login do aplicativo.',
+       'role': 'Analista de atendimento'
+    },    
+    { 'pergunta': 'Qual é o procedimento padrão para recuperar a senha esquecida no aplicativo Fretebras?',
+      'resposta esperada': 'O procedimento padrão geralmente envolve clicar no link "Esqueci minha senha" na tela de login e seguir as instruções enviadas para o e-mail cadastrado.',
+      'role': 'Analista de atendimento'
+    },
+    {'pergunta': 'É necessário fornecer informações adicionais para recuperar a senha no aplicativo Fretebras?',
+     'resposta esperada': 'Normalmente, você precisará fornecer seu e-mail de cadastro para receber um link de redefinição de senha.',
+     'role': 'Analista de atendimento'
+    },
+    { 'pergunta': 'link de redefinição de senha é enviado automaticamente para o e-mail cadastrado?',
+      'resposta esperada': 'Sim, o link de redefinição de senha é enviado para o endereço de e-mail associado à sua conta.',
+      'role': 'Analista de atendimento'
+    },
+    { 'pergunta': 'Quanto tempo leva para receber o e-mail de redefinição de senha?',
+      'resposta esperada': 'Geralmente, o e-mail de redefinição de senha é enviado imediatamente, mas pode levar alguns minutos para chegar à sua caixa de entrada.',
+      'role': 'Analista de atendimento'
+    },
+    { 'pergunta': 'O link de redefinição de senha tem prazo de validade?',
+      'resposta esperada': 'Sim, o link de redefinição de senha geralmente tem um prazo de validade para fins de segurança.',
+      'role': 'Analista de atendimento'
+    },
+    { 'pergunta': 'O aplicativo Fretebras possui uma opção de recuperação de senha por SMS?',
+      'Resposta esperada': 'Algumas plataformas podem oferecer a opção de recuperação de senha por SMS, mas isso depende das configurações do aplicativo.',
+      'role': 'Analista de atendimento'
+    },
+    { 'pergunta': 'E se eu não receber o e-mail de redefinição de senha?',
+      'resposta esperada': 'Se você não receber o e-mail de redefinição de senha, verifique sua pasta de spam ou lixo eletrônico. Caso ainda não tenha recebido, entre em contato com o suporte do aplicativo Fretebras para obter assistência adicional.',
+      'role': 'Analista de atendimento'
+    },
+    { 'pergunta': 'O aplicativo Fretebras possui uma equipe de suporte para ajudar com a recuperação de senha?',
+      'resposta esperada': 'Sim, o aplicativo Fretebras geralmente possui uma equipe de suporte para ajudar os usuários com problemas de login e recuperação de senha.',
+      'role': 'Analista de atendimento'
+    },  
+    { 'pergunta': 'É possível recuperar a senha através do atendimento telefônico?',
+      'resposta esperada': 'Em alguns casos, pode haver um atendimento telefônico disponível para auxiliar na recuperação de senha, mas isso pode variar.',
+      'role': 'Analista de atendimento'
+    }                             
+  
 ]
