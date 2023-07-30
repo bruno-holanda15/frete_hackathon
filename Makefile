@@ -1,4 +1,6 @@
 transcript:
-	python3 audio-service/main.py
-filter:
-	python3 filter-service/main.py
+	python3 -B audio-service/main.py
+	
+filter:transcript
+	python3 -B filter-service/main.py
+

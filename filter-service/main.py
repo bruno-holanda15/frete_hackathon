@@ -2,7 +2,8 @@ import openai
 import json
 import os
 from dotenv import load_dotenv
-
+from colorama import init, Fore, Style
+init()
 load_dotenv()
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
@@ -18,10 +19,9 @@ def call_gpt(messages: list, model: str, temperature: float = 1, presence_penalt
 
 from prompt import prompt
 
-with open("audio-service/audio.txt", "r") as arquivo:
+with open("audio.txt", "r") as arquivo:
     texto_transcrito = arquivo.read()
-    print("Frase captada: ", texto_transcrito)
-
+    print("--------------------------------------------------------------")
     inputs = [
         {"role": "system", "content": prompt},
         {"role": "user", "content": json.dumps(texto_transcrito)}
@@ -31,4 +31,6 @@ with open("audio-service/audio.txt", "r") as arquivo:
 
     tema = results['choices'][0]['message']['content'].strip()
 
-    print('Tema filtrado: ',tema)
+    print(f"{Fore.GREEN}Tema filtrado:{Style.RESET_ALL} ", tema)
+    print("--------------------------------------------------------------")
+
